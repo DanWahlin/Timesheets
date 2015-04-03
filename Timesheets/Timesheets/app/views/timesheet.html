@@ -1,0 +1,60 @@
+﻿
+<div class="view" data-ng-controller="TimesheetController">
+    <div class="row timesheet">
+        <div class="span12">
+            <div class="content">
+                <div class="row">
+                    <div class="span9 head">
+                        {{timesheet.employee.firstName}} {{timesheet.employee.lastName}}</h3>
+                    </div>
+                    <div class="span3 subhead align-right">
+                        {{timesheet.weekEnding | date}}
+                    </div>
+                </div>
+            </div>
+
+            <table class="table table-hover table-striped table-condensed table-bordered highlightFirstLast">
+                <thead>
+                    <tr class="">
+                        <th>Category</th>
+                        <th data-ng-repeat="day in days">{{day}}</th>
+                        <th>Total Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-ng-repeat="row in timesheet.rows">
+                        <td>
+                            <select data-ng-model="row.categoryID">
+                                <option data-ng-repeat="category in categories" value="{{category.id}}" 
+                                        data-ng-selected="{{isCategorySelected(row.categoryID, category.id)}}">{{category.title}}</option>
+                            </select>
+                        </td>
+                        <td data-ng-repeat="day in row.dayValues">
+                            <input type="text" data-ng-model="day.hours" data-ng-change="updateTotals(row, $index)"/>
+                        </td>
+                        <td>
+                            <div class="total badge">{{row.rowTotal}}</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td data-ng-repeat="day in days">
+                            <div class="total">{{dayTotals[day]}}</div>
+                        </td>
+                        <td><div class="total badge badge-important">{{grandTotal}}</div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span12">
+            <div>
+                <button class="btn btn-primary" data-ng-click="addRow()">Add Row</button>
+                <button class="btn btn-primary" data-ng-click="saveTimesheet()">Save</button>
+                <button class="btn btn-primary" data-bs-modal="'/app/partials/modal.html'">Delete</button>
+                <button class="btn btn-primary">Summarize</button>
+            </div>
+        </div>
+    </div>
+</div>

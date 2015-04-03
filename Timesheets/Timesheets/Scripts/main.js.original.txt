@@ -1,0 +1,44 @@
+﻿require.config({
+    baseUrl: '/app',
+    paths: {
+        jquery:                 ['//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min',
+                                 '/scripts/jquery-2.0.0.min'],
+        angular:                ['//ajax.googleapis.com/ajax/libs/angularjs/1.1.4/angular',
+                                 '/scripts/angular-1.1.4'],
+        bootstrap:              ['//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min',
+                                 '/scripts/bootstrap.min'],
+        bootstrapDatePicker:    ['/scripts/bootstrap-datepicker'],
+        angularStrap:           ['/scripts/angular-strap']
+
+    },
+    shim: {
+        jquery:                 { exports: '$' },
+        angular:                { exports: 'angular' },
+        bootstrap:              { deps: ['jquery'] },
+        bootstrapDatePicker:    { deps: ['bootstrap'] },
+        angularStrap:           { deps: ['angular', 'bootstrap'] }
+    },
+    urlArgs: 'v=1.0'
+});
+
+require(
+    [
+        'jquery',
+        'angular',
+        'bootstrap',
+        'bootstrapDatePicker',
+        'angularStrap',
+        'app',
+        'services/routeResolver',
+        'controllers/navbarController',
+        'services/employeesService',
+        'services/errorService',
+        'services/timesheetService'
+    ],
+    function ($, angular) {
+        angular.bootstrap(document, ['timesheetApp']);   
+});
+
+/*
+    Bootstrap CDN info: http://www.bootstrapcdn.com
+*/

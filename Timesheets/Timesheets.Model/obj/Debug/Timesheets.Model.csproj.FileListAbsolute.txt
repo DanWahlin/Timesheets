@@ -1,0 +1,5 @@
+\\psf\Dropbox\Projects\GitHub\Timesheets\Timesheets\Timesheets.Model\bin\Debug\Timesheets.Model.dll
+\\psf\Dropbox\Projects\GitHub\Timesheets\Timesheets\Timesheets.Model\bin\Debug\Timesheets.Model.pdb
+\\psf\Dropbox\Projects\GitHub\Timesheets\Timesheets\Timesheets.Model\obj\Debug\Timesheets.Model.csprojResolveAssemblyReference.cache
+\\psf\Dropbox\Projects\GitHub\Timesheets\Timesheets\Timesheets.Model\obj\Debug\Timesheets.Model.dll
+\\psf\Dropbox\Projects\GitHub\Timesheets\Timesheets\Timesheets.Model\obj\Debug\Timesheets.Model.pdb

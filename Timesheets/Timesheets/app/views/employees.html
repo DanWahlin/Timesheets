@@ -1,0 +1,66 @@
+﻿<div class="view" data-ng-controller="EmployeesController">
+    <div class="row">
+        <div class="span12">
+            <header class="clearfix">
+                <img src="/Content/images/people.png" class="icon" />
+                <span class="head">Employees</span>
+            </header>
+            <div class="alerts">
+                <div class="alert fade" ng-repeat="alert in alerts" bs-alert="alert"></div>
+            </div>
+        </div>
+        <table class="table table-striped table-hover highlightFirstLast">
+            <thead>
+                <tr>
+                    <th>
+                        <div>
+                            <button class="btn" href="#" 
+                                    data-bs-modal="'app/views/employeeEdit.html'"
+                                    data-ng-click="prepareToAddEmployee()">Add New</button>
+                        </div>
+                    </th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="e in employees">
+                    <td>
+                        <div class="card">
+                            <div class="front">
+                                <img alt="{{e.lastName}}" data-ng-src="{{e.photoUrl}}" />
+                            </div>
+                            <div class="back">
+                                <p>{{e.departmentId}}</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>{{e.lastName}}, {{e.firstName}}</td>
+                    <td>{{e.emailAddress}}</td>
+                    <td>
+                        <div class="btn-group">
+                            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Action
+                                    <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" data-bs-modal="'app/views/employeeEdit.html'"
+                                       data-ng-click="prepareToEditEmployee(e)">Edit</a></li>
+                                <li><a href="#" data-bs-modal="'app/views/employeeDelete.html'">Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+
+ 

@@ -1,0 +1,228 @@
+﻿header {
+    margin-bottom:10px;
+}
+
+th, td {
+    font-size: 12pt;
+    height: 25px;
+    padding: 5px;
+}
+
+.view {
+
+}
+
+#ng-view {
+  position:relative;
+  min-height:500px;
+}
+
+/* Animations */
+.view-enter, .view-leave {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.view-enter {
+  opacity:0;
+  left:100px;
+  width:100%;
+  position:absolute;
+}
+.view-enter.view-enter-active {
+  left:0;
+  opacity:1;
+}
+
+.view-leave {
+  position:absolute;
+  left:0;
+  width:100%;
+  opacity:1;
+}
+
+.view-leave.view-leave-active {
+  left:-100px;
+  opacity:0;
+}
+
+body.skip-animations * {
+  -webkit-transition:none!important;
+  -moz-transition:none!important;
+  -o-transition:none!important;
+  transition:none!important;
+}
+
+.icon {
+    float:left;
+    margin: 0px 10px 10px 0px;
+}
+
+.dialog {
+    display:none;
+}
+
+.timesheet .highlightFirstLast th, .timesheet .highlightFirstLast td {
+    text-align: center;
+    font-size: 12pt;
+    height: 25px;
+    padding: 5px;
+}
+
+.highlightFirstLast th {
+    background-color: #0088cc;
+    color: white;
+}
+
+.highlightFirstLast tbody tr:last-child td {
+    background-color: #999;
+    color: #fff;
+    font-weight: bold;
+}
+
+.timesheet select {
+    width: 100%;
+    margin-bottom: 0px;
+    font-size: 12pt;
+}
+
+.timesheet input[type="text"] {
+    width: 50px;
+    text-align: center;
+    border: 0px;
+    background: transparent;
+    -webkit-box-shadow: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 0px 0px;
+    margin-bottom: 0px;
+}
+
+.timesheet .badge {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    font-size: 12pt;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    width: 20px;
+}
+
+.timesheet .total {
+    margin-top: 3px;
+}
+
+.head {
+    font-size: 20pt;
+    font-weight: bold;
+    line-height: 2.0;
+}
+
+.subhead {
+    font-size: 14pt;
+    font-weight: bold;
+    line-height: 3.0;
+    vertical-align: middle;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.filter {
+    margin-top: 18px;
+}
+
+.right {
+    float: right;
+}
+
+.nodata {
+    font-size: 14pt;
+    font-weight:bold;
+    vertical-align:middle;
+}
+
+
+.card {
+    position: relative;
+    height: 120px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+    .card div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 120px;
+        height: 100px;    
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -ms-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+    }
+
+        .card div.back {                 
+            -moz-backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-transform: perspective(800px) rotateY(180deg);
+            -webkit-transform: perspective(800px) rotateY(180deg);
+            transform: perspective(800px) rotateY(180deg);
+        }
+
+        .card div.front {
+            -moz-backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-transform: perspective(800px) rotateY(0deg);
+            -webkit-transform: perspective(800px) rotateY(0deg);
+            transform: perspective(800px) rotateY(0deg);          
+        }
+           
+
+    .card:hover div.back {
+        -moz-transform: perspective(800px) rotateY(0);
+        -webkit-transform: perspective(800px) rotateY(0);
+        transform: perspective(800px) rotateY(0);
+    }
+
+    .card:hover div.front {
+        -webkit-transform: perspective(800px) rotateY(-180deg);
+        -moz-transform: perspective(800px) rotateY(-180deg);
+        transform: perspective(800px) rotateY(-180deg);
+    }
+
+/* Overrides */
+
+/* Bootstrap overrides */
+.navbar-inner {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.modal-backdrop,
+.modal-backdrop.fade.in {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+.modal.fade {
+  top: 0;
+  -webkit-transition: opacity 0.2s linear, top 0.2s ease-out;
+     -moz-transition: opacity 0.2s linear, top 0.2s ease-out;
+       -o-transition: opacity 0.2s linear, top 0.2s ease-out;
+          transition: opacity 0.2s linear, top 0.2s ease-out;
+}
+
+/* ng-cloak */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng.ng-cloak {
+    display: none;
+}
+
+.dragOver {
+    opacity: 0.5;
+    border: dashed black 2px;  
+}

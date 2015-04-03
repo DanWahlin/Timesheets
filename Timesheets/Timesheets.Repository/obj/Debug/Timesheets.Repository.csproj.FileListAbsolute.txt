@@ -1,0 +1,10 @@
+\\psf\Dropbox\Projects\GitHub\Timesheets\Timesheets\Timesheets.Repository\bin\Debug\Timesheets.Repository.dll.config
+\\psf\Dropbox\Projects\GitHub\Timesheets\Timesheets\Timesheets.Repository\bin\Debug\Timesheets.Repository.dll
+\\psf\Dropbox\Projects\GitHub\Timesheets\Timesheets\Timesheets.Repository\bin\Debug\Timesheets.Repository.pdb
+\\psf\Dropbox\Projects\GitHub\Timesheets\Timesheets\Timesheets.Repository\bin\Debug\EntityFramework.dll
+\\psf\Dropbox\Projects\GitHub\Timesheets\Timesheets\Timesheets.Repository\bin\Debug\Timesheets.Model.dll
+\\psf\Dropbox\Projects\GitHub\Timesheets\Timesheets\Timesheets.Repository\bin\Debug\Timesheets.Model.pdb
+\\psf\Dropbox\Projects\GitHub\Timesheets\Timesheets\Timesheets.Repository\bin\Debug\EntityFramework.xml
+\\psf\Dropbox\Projects\GitHub\Timesheets\Timesheets\Timesheets.Repository\obj\Debug\Timesheets.Repository.csprojResolveAssemblyReference.cache
+\\psf\Dropbox\Projects\GitHub\Timesheets\Timesheets\Timesheets.Repository\obj\Debug\Timesheets.Repository.dll
+\\psf\Dropbox\Projects\GitHub\Timesheets\Timesheets\Timesheets.Repository\obj\Debug\Timesheets.Repository.pdb

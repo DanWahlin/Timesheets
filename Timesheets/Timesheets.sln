@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timesheets", "Timesheets\Timesheets.csproj", "{508C3264-7DFB-4AEE-9009-AC914C34BA36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timesheets.Model", "Timesheets.Model\Timesheets.Model.csproj", "{A8938468-1338-41A4-8CDC-C59AC8336D84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timesheets.Repository", "Timesheets.Repository\Timesheets.Repository.csproj", "{4B7EA23C-5C20-4EDF-8651-87A5B6AC5223}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0FE7EBC3-A882-47C1-8651-DD741AB8C5E6}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://wahlinconsulting.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Timesheets.Model\\Timesheets.Model.csproj
+		SccProjectName1 = Timesheets.Model
+		SccLocalPath1 = Timesheets.Model
+		SccProjectUniqueName2 = Timesheets.Repository\\Timesheets.Repository.csproj
+		SccProjectName2 = Timesheets.Repository
+		SccLocalPath2 = Timesheets.Repository
+		SccProjectUniqueName3 = Timesheets\\Timesheets.csproj
+		SccProjectName3 = Timesheets
+		SccLocalPath3 = Timesheets
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{508C3264-7DFB-4AEE-9009-AC914C34BA36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{508C3264-7DFB-4AEE-9009-AC914C34BA36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{508C3264-7DFB-4AEE-9009-AC914C34BA36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{508C3264-7DFB-4AEE-9009-AC914C34BA36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8938468-1338-41A4-8CDC-C59AC8336D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8938468-1338-41A4-8CDC-C59AC8336D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8938468-1338-41A4-8CDC-C59AC8336D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8938468-1338-41A4-8CDC-C59AC8336D84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B7EA23C-5C20-4EDF-8651-87A5B6AC5223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B7EA23C-5C20-4EDF-8651-87A5B6AC5223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B7EA23C-5C20-4EDF-8651-87A5B6AC5223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B7EA23C-5C20-4EDF-8651-87A5B6AC5223}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

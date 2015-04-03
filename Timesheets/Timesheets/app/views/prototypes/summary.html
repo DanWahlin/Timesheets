@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <link href="../../../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../../../Content/bootstrap-responsive.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery-1.9.1.js"></script>
+    <script src="../../../Scripts/bootstrap.js"></script>
+    <script src="../../../Scripts/highcharts.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="span6">
+                <h2>Hours By Employee 1/1/2013-1/31/2013</h2>
+                <table class="table table-hover table-striped table-condensed table-bordered">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Total Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="icon-zoom-in pull-right" /></td>
+                            <td>Wahlin, Dan</td>
+                            <td><span class="badge badge-important">70</span></td>
+                        </tr>
+                        <tr>
+                            <td><i class="icon-zoom-in pull-right" /></td>
+                            <td>Allen, Scott</td>
+                            <td><span>35</span></td>
+                        </tr>
+                        <tr>
+                            <td><i class="icon-zoom-in pull-right" /></td>
+                            <td>Xavier, Spike</td>
+                            <td><span>10</span></td>
+                        </tr>
+                        <tr>
+                            <td><i class="icon-zoom-in pull-right" /></td>
+                            <td>Smith, Joe</td>
+                            <td><span>10</span></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="span6">
+                <h2>Hours By Category 1/1/2013 - 1/31/2013</h2>
+                <div id="chart"></div>
+                <script>
+                    $(function () {
+                        var chart;
+                        $(document).ready(function () {
+                            chart = new Highcharts.Chart({
+                                chart: {
+                                    renderTo: 'chart',
+                                    type: 'column'
+                                },
+                                title: {
+                                    text: 'Hours By Category'
+                                },
+                                subtitle: {
+                                    text: 'Timesheet Demo'
+                                },
+                                xAxis: {
+                                    categories: [
+                                        'Mon',
+                                        'Tue',
+                                        'Wed',
+                                        'Thu',
+                                        'Fri',
+                                        'Sat',
+                                        'Sun'
+                                    ]
+                                },
+                                yAxis: {
+                                    min: 0,
+                                    title: {
+                                        text: 'Hours'
+                                    }
+                                },
+                                legend: {
+                                    layout: 'vertical',
+                                    backgroundColor: '#FFFFFF',
+                                    align: 'left',
+                                    verticalAlign: 'top',
+                                    x: 100,
+                                    y: 70,
+                                    floating: true,
+                                    shadow: true
+                                },
+                                tooltip: {
+                                    formatter: function () {
+                                        return '' +
+                                            this.x + ': ' + this.y + ' hours';
+                                    }
+                                },
+                                plotOptions: {
+                                    column: {
+                                        pointPadding: 0.2,
+                                        borderWidth: 0
+                                    }
+                                },
+                                series: [{
+                                    name: 'Planning',
+                                    data: [50, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6]
+
+                                }, {
+                                    name: 'Estimating',
+                                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0]
+
+                                }, {
+                                    name: 'Working',
+                                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0]
+
+                                }, {
+                                    name: 'Eating',
+                                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4]
+
+                                }]
+                            });
+                        });
+
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
